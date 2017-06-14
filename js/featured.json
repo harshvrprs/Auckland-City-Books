@@ -1,0 +1,54 @@
+{
+"Featured":[
+    {
+        "id": "1",
+        "name": "Milk and Honey",
+        "price": "$29.00",
+		"category": "Non-Fiction",
+		"description": "The book is divided into four chapters, and each chapter serves a different purpose; deals with a different pain; heals a different heartache. milk and honey takes readers through a journey of the most bitter moments in life and finds sweetness in them because there is sweetness everywhere ifyou are just willing to look.",
+		"popularity": "high",
+        "onsale": "yes",
+
+    },
+    {
+        "id": "2",
+        "name": "Good Night Stories for Rebel Girls",
+        "price": "$31.99",
+		"category": "Hardcover",
+		"description": "THE INSPIRING NO.1 BESTSELLER 'The anti-princess book teaching girls to rebel' Georgina Rannard, BBC News 'Absolutely beautiful - get one for yourself and one to inspire a woman in your life' Stylist 'In an ideal world, not only would mothers read this aloud to their daughters, but teachers would read it to schoolboys' Sunday Times What if the princess didn't marry Prince Charming but instead went on to be an astronaut? What if the jealous step sisters were supportive and kind? And what if the queen was the one really in charge of the kingdom? Illustrated by sixty female artists from every corner of the globe, Good Night Stories for Rebel Girls introduces us to one hundred remarkable women and their extraordinary lives, from Ada Lovelace to Malala, Amelia Earhart to Michelle Obama. Empowering, moving and inspirational, these are true fairy tales for heroines who definitely don't need rescuing.",
+		"popularity": "high",
+        "onsale": "yes",
+
+    },
+	{
+        "id": "3",
+        "name": "The Dry",
+        "price": "$19.99",
+		"category": "Paperback",
+		"description": "WHO REALLY KILLED THE HADLER FAMILY? A breathless pageturner ...A secret on every page" The New York Times "One of the most stunning debuts I've ever read ...Read it!" David Baldacci It hasn't rained in Kiewarra for two years. Tensions in the farming community become unbearable when three members of the Hadler family are discovered shot to death on their property",
+		"popularity": "high",
+        "onsale": "yes",
+
+    },
+	{
+        "id": "4",
+        "name": "What Color is Your Parachute?",
+        "price": "$38.99",
+		"category": "Paperback",
+		"description": "The world's most popular job-search book is updated for 2017, tailoring its long-trusted guidance with up-to-the-minute information and advice for today's job-hunters and career-changers.",
+		"popularity": "high",
+        "onsale": "yes",
+
+    },
+	{
+        "id": "5",
+        "name": "The Girl Who Drank the Moon",
+        "price": "$22.99",
+		"category": "Hardback",
+		"description": "Every year, the people of the Protectorate leave a baby as an offering to the witch who lives in the forest. They hope this sacrifice will keep her from terrorizing their town. But the witch, Xan, is kind and gentle.",
+		"popularity": "high",
+        "onsale": "yes",
+
+    },
+]
+}
