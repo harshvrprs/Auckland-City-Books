@@ -8,13 +8,13 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-
     <link rel="icon" href="favicon.ico">
 
-    <title>About Us</title>
+    <title>Auckland City Books </title>
 
     <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -34,7 +34,7 @@
   </head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
+  <body onload="openCity(event, 'All','All')">
     <div class="navbar-wrapper">
       <div class="container">
 
@@ -47,14 +47,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Auckland City Books </a>
+              <a class="navbar-brand" href="#">Auckland City Books </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse" style="float:right;">
               <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.html">Browse Books</a></li>
+                <li class="active"><a href="product.html">Browse Books</a></li>
                 <li><a href="signup.html">Register</a></li>
-                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="about.html">About</a></li>
               </ul>
             </div>
           </div>
@@ -64,46 +64,94 @@
     </div>
 
 
-    <div class="container" style="margin-top:100px;">
-        <div class="row">
-            <div class="col-sm-6">
-              <h4 style="text-align:justify; font-family:Calibri;">Auckland City Books was established in 1971 and our book shops are in every little town in New Zealand. We stock books on a wide variety of subjects including Art, Drama, Humour, Music, Photography, Biography, Sports, Business, Careers, Investing, Cooking and Food, Education, Fiction and Poetry, Travel, Health and Self-Help, Medicine, Nutrition, Psychology, Recovery and Addiction, Relationships, Gardening, Interior Design, Sustainable Living, Humanities.</h4>
-                <div class="well">
-                    <h4><i class="fa fa-home fa-1x" style="color:#339966"></i> Address:</h4>
-                    <p>Auckland City Books<br>139 Carrington Rd,<br>Mount Albert, <br>Auckland 1025</p>
-                    <h4><i class="fa fa-envelope fa-1x" style="color:#339966"></i> E-Mail Address:</h4>
-                    <p>parash01@myunitec.ac.nz</p>
-                    <h4><i class="fa fa-user fa-1x" style="color:#339966"></i> Phone:</h4>
-                    <p>+62-20-41349959<br>+64-22-4541035</p>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.4001716114676!2d174.7055693148244!3d-36.88077397993207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4720a3564dcf%3A0xac4fd7893e9a560f!2sUnitec+Institute+of+Technology!5e0!3m2!1sen!2snz!4v1497439466854" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators"></ol>
+
+      <div class="carousel-inner"></div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+
+
+
+      <!-- START THE FEATURETTES -->
+
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'All','All')">All</button>
+        <button class="tablinks" onclick="openCity(event, 'Educational','Educational')">Educational</button>
+        <button class="tablinks" onclick="openCity(event, 'Educational','Educational')">Professional</button>
+        <button class="tablinks" onclick="openCity(event, 'Literature','Literature')">Literature</button>
+        <button class="tablinks" onclick="openCity(event, 'Literature','Literature')">Fiction</button>
+        <button class="tablinks" onclick="openCity(event, 'Coffee Table Books','Coffee Table Books')">Coffee Table Books</button>
+        <button class="tablinks" onclick="openCity(event, 'Philosophy','Philosophy')">Philosophy</button>
+      </div>
+
+
+
+      <div id="All" class="tabcontent">
+        <div class="containertab">
         </div>
-    </div>
+      </div>
 
+      <div id="Educational" class="tabcontent">
+        <div class="containertab">
+        </div>
+      </div>
 
+      <div id="Literature" class="tabcontent">
+        <div class="containertab">
+        </div>
+      </div>
 
+      <div id="Coffee Table Books" class="tabcontent">
+        <div class="containertab">
+        </div>
+      </div>
 
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-
+      <div id="Philosophy" class="tabcontent">
+        <div class="containertab">
+        </div>
+      </div>
       <!-- FOOTER -->
       <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
         <p>&copy; Auckland City Books &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
 
+    <script>
+    function openCity(evt, cityName,category) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
 
+        openCategory(category);
+    }
+    </script>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="js/url.js"></script>
+    <script src="js/producturl.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
