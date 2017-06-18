@@ -8,10 +8,14 @@ body {
 }
 
 .badge-notify{
-    background:red;
+    background:black;
     position:relative;
     top: -20px;
     right: 10px;
+  }
+  .my-cart-icon{
+    padding-top: 18px;
+    padding-left: 10px;
   }
   .my-cart-icon-affix {
     position: fixed;
